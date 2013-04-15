@@ -7,5 +7,5 @@
     "author_uri"  : "http://rahforum.biz",
     "order"       : 1,
     "flags"       : 2,
-    "help"        : ""
+    "help"        : {"file" : ["./README.textile"]}
 }
