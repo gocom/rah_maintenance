@@ -1,0 +1,15 @@
+h1. rah_maintenance
+
+p. Togglable maintenance mode option for your Preferences panel. When on, unauthenticated visitors will see your error_503 page template.
+
+h2. Requirements
+
+p. Rah_maintenance's minimum requirements:
+
+* Textpattern 4.6-dev
+
+h2. Changelog
+
+h3. Version 0.1 - upcoming
+
+* Initial release.
