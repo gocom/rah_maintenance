@@ -12,7 +12,8 @@ class rah_maintenance
 
 	public function __construct()
 	{
-		register_callback(array($this, 'install'), 'plugin_lifecycle.rah_maintenance');
+		register_callback(array($this, 'install'), 'plugin_lifecycle.rah_maintenance', 'installed');
+		register_callback(array($this, 'uninstall'), 'plugin_lifecycle.rah_maintenance', 'deleted');
 		register_callback(array($this, 'error_page'), 'pretext');
 	}
 
@@ -26,6 +27,15 @@ class rah_maintenance
 		{
 			set_pref('rah_maintenance_active', 0, 'site', PREF_PLUGIN, 'yesnoradio', 81);
 		}
+	}
+
+	/**
+	 * Uninstaller.
+	 */
+
+	public function uninstall()
+	{
+		safe_delete('txp_prefs', "name like 'rah\_maintenance\_%'");
 	}
 
 	/**
