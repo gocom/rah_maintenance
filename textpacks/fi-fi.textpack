@@ -1,0 +1,4 @@
+#@admin
+#@language fi-fi
+rah_maintenance_active => Aktivoi huoltotila?
+rah_maintenance_in_progress => Sivuston huoltaminen käynnissä. Ole hyvä ja yritä myöhemmin uudelleen.

@@ -1,0 +1,3 @@
+#@admin
+rah_maintenance_active => Maintenance mode active?
+rah_maintenance_in_progress => Site maintenance in progress. Please try again later.
