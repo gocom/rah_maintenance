@@ -1,7 +1,16 @@
 <?php
 
 /**
- * Handles maintenance mode.
+ * Rah_maintenance plugin for Textpattern CMS
+ *
+ * @author  Jukka Svahn
+ * @date    2013-
+ * @license GNU GPLv2
+ * @link    https://github.com/gocom/rah_maintenance
+ *
+ * Copyright (C) 2013 Jukka Svahn http://rahforum.biz
+ * Licensed under GNU Genral Public License version 2
+ * http://www.gnu.org/licenses/gpl-2.0.html
  */
 
 class rah_maintenance
