@@ -2,6 +2,10 @@ h1. rah_maintenance
 
 p. Togglable maintenance mode option for your Preferences panel. When on, unauthenticated visitors will see your error_503 page template.
 
+h2. Toolshed notice
+
+p. This is a toolshed project. Experimental and not part of the main supported product line of Rah. Not yet at least. Please use at your own risk.
+
 h2. Requirements
 
 p. Rah_maintenance's minimum requirements:
