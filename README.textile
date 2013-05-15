@@ -1,6 +1,14 @@
 h1. rah_maintenance
 
+p. "Packagist":https://packagist.org/packages/rah/rah_maintenance | "Twitter":http://twitter.com/gocom | "Donate":http://rahforum.biz/donate/rah_maintenance
+
 p. Togglable maintenance mode option for your Preferences panel. When on, unauthenticated visitors will see your error_503 page template.
+
+h2. Installing
+
+p. Using "Composer":http://getcomposer.org:
+
+bc. $ composer.phar install rah/rah_maintenance
 
 h2. Toolshed notice
 
