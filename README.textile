@@ -1,24 +1,20 @@
 h1. rah_maintenance
 
-p. "Packagist":https://packagist.org/packages/rah/rah_maintenance | "Twitter":http://twitter.com/gocom | "Donate":http://rahforum.biz/donate/rah_maintenance
+"Download":https://github.com/gocom/rah_maintenance/releases | "Packagist":https://packagist.org/packages/rah/rah_maintenance | "Issues":https://github.com/gocom/rah_maintenance/issues | "Twitter":http://twitter.com/gocom | "Donate":http://rahforum.biz/donate/rah_maintenance
 
-p. Togglable maintenance mode option for your Preferences panel. When on, unauthenticated visitors will see your error_503 page template.
+Togglable maintenance mode option for your Preferences panel. When on, unauthenticated visitors will see your error_503 page template.
 
-h2. Installing
+h2. Install
 
-p. Using "Composer":http://getcomposer.org:
+Using "Composer":http://getcomposer.org:
 
-bc. $ composer.phar install rah/rah_maintenance
+bc. $ composer require rah/rah_maintenance:*
+
+Or "download":https://github.com/gocom/rah_maintenance/releases a plugin package.
 
 h2. Toolshed notice
 
-p. This is a toolshed project. Experimental and not part of the main supported product line of Rah. Not yet at least. Please use at your own risk.
-
-h2. Requirements
-
-p. Rah_maintenance's minimum requirements:
-
-* Textpattern 4.6-dev
+This is a toolshed project. Experimental and not part of the main supported product line of Rah. Not yet at least. Please use at your own risk.
 
 h2. Changelog
 
