@@ -37,7 +37,7 @@ class Rah_Maintenance
     {
         register_callback(array($this, 'install'), 'plugin_lifecycle.rah_maintenance', 'installed');
         register_callback(array($this, 'uninstall'), 'plugin_lifecycle.rah_maintenance', 'deleted');
-        register_callback(array($this, 'error_page'), 'pretext');
+        register_callback(array($this, 'errorPage'), 'pretext');
     }
 
     /**
@@ -64,7 +64,7 @@ class Rah_Maintenance
      * Invokes error page when maintenance mode is active.
      */
 
-    public function error_page()
+    public function errorPage()
     {
         if (get_pref('rah_maintenance_active') && !is_logged_in()) {
             txp_die(gTxt('rah_maintenance_in_progress'), 503);
