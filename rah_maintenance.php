@@ -12,7 +12,7 @@
  * http://www.gnu.org/licenses/gpl-2.0.html
  */
 
-class rah_maintenance
+class Rah_Maintenance
 {
     /**
      * Constructor.
@@ -31,8 +31,7 @@ class rah_maintenance
 
     public function install()
     {
-        if (get_pref('rah_maintenance_active', false) === false)
-        {
+        if (get_pref('rah_maintenance_active', false) === false) {
             set_pref('rah_maintenance_active', 0, 'site', PREF_PLUGIN, 'yesnoradio', 81);
         }
     }
@@ -52,11 +51,10 @@ class rah_maintenance
 
     public function error_page()
     {
-        if (get_pref('rah_maintenance_active') && !is_logged_in())
-        {
+        if (get_pref('rah_maintenance_active') && !is_logged_in()) {
             txp_die(gTxt('rah_maintenance_in_progress'), 503);
         }
     }
 }
 
-new rah_maintenance();
+new Rah_Maintenance();
