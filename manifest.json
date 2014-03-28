@@ -1,11 +1,11 @@
 {
-    "name"        : "rah_maintenance",
-    "description" : "Maintenance mode",
-    "version"     : "0.1.0",
-    "type"        : 0,
-    "author"      : "Jukka Svahn",
-    "author_uri"  : "http://rahforum.biz",
-    "order"       : 1,
-    "flags"       : 2,
-    "help"        : {"file" : ["./README.textile"]}
+    "name": "rah_maintenance",
+    "description": "Maintenance mode",
+    "version": "0.1.0",
+    "type": 0,
+    "author": "Jukka Svahn",
+    "author_uri": "http://rahforum.biz",
+    "order": 1,
+    "flags": 2,
+    "help": {"file" : ["./README.textile"]}
 }
