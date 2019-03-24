@@ -8,7 +8,7 @@ h2. Install
 
 Using "Composer":https://getcomposer.org:
 
-bc. $ composer require rah/rah_maintenance:*
+bc. $ composer require rah/rah_maintenance
 
 h2. Changelog
 
