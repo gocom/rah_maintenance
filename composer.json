@@ -17,8 +17,8 @@
         "source": "https://github.com/gocom/rah_maintenance"
     },
     "require": {
-        "php": ">=5.2.0",
-        "textpattern/lock": ">=4.4.1",
+        "php": ">=5.6.0",
+        "textpattern/lock": ">=4.6.0",
         "textpattern/installer": "*"
     }
 }

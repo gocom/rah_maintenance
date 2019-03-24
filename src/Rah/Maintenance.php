@@ -44,11 +44,7 @@ final class Rah_Maintenance
     public function install()
     {
         if (get_pref('rah_maintenance_active', false) === false) {
-            if (defined('PREF_PLUGIN')) {
-                set_pref('rah_maintenance_active', 0, 'site', PREF_PLUGIN, 'yesnoradio', 81);
-            } else {
-                set_pref('rah_maintenance_active', 0, 'publish', PREF_BASIC, 'yesnoradio', 81);
-            }
+            set_pref('rah_maintenance_active', 0, 'site', PREF_PLUGIN, 'yesnoradio', 81);
         }
     }
 
