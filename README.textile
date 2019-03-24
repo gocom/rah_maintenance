@@ -1,20 +1,14 @@
 h1. rah_maintenance
 
-"Download":https://github.com/gocom/rah_maintenance/releases | "Packagist":https://packagist.org/packages/rah/rah_maintenance | "Issues":https://github.com/gocom/rah_maintenance/issues | "Twitter":http://twitter.com/gocom | "Donate":http://rahforum.biz/donate/rah_maintenance
+"Packagist":https://packagist.org/packages/rah/rah_maintenance | "Issues":https://github.com/gocom/rah_maintenance/issues | "Donate":https://rahforum.biz/donate/rah_maintenance
 
 Togglable maintenance mode option for your Preferences panel. When on, unauthenticated visitors will see your error_503 page template.
 
 h2. Install
 
-Using "Composer":http://getcomposer.org:
+Using "Composer":https://getcomposer.org:
 
 bc. $ composer require rah/rah_maintenance:*
-
-Or "download":https://github.com/gocom/rah_maintenance/releases a plugin package.
-
-h2. Toolshed notice
-
-This is a toolshed project. Experimental and not part of the main supported product line of Rah. Not yet at least. Please use at your own risk.
 
 h2. Changelog
 
