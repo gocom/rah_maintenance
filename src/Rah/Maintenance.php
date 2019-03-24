@@ -4,7 +4,7 @@
  * rah_maintenance - Textpattern CMS maintenance mode
  * https://github.com/gocom/rah_maintenance
  *
- * Copyright (C) 2014 Jukka Svahn
+ * Copyright (C) 2019 Jukka Svahn
  *
  * This file is part of rah_maintenance.
  *
@@ -26,24 +26,21 @@
  *
  * @internal
  */
-
-class Rah_Maintenance
+final class Rah_Maintenance
 {
     /**
      * Constructor.
      */
-
     public function __construct()
     {
-        register_callback(array($this, 'install'), 'plugin_lifecycle.rah_maintenance', 'installed');
-        register_callback(array($this, 'uninstall'), 'plugin_lifecycle.rah_maintenance', 'deleted');
-        register_callback(array($this, 'errorPage'), 'pretext');
+        register_callback([$this, 'install'], 'plugin_lifecycle.rah_maintenance', 'installed');
+        register_callback([$this, 'uninstall'], 'plugin_lifecycle.rah_maintenance', 'deleted');
+        register_callback([$this, 'errorPage'], 'pretext');
     }
 
     /**
      * Installer.
      */
-
     public function install()
     {
         if (get_pref('rah_maintenance_active', false) === false) {
@@ -58,7 +55,6 @@ class Rah_Maintenance
     /**
      * Uninstaller.
      */
-
     public function uninstall()
     {
         safe_delete('txp_prefs', "name like 'rah\_maintenance\_%'");
@@ -67,7 +63,6 @@ class Rah_Maintenance
     /**
      * Invokes error page when maintenance mode is active.
      */
-
     public function errorPage()
     {
         if (get_pref('rah_maintenance_active') && !is_logged_in()) {
@@ -75,5 +70,3 @@ class Rah_Maintenance
         }
     }
 }
-
-new Rah_Maintenance();

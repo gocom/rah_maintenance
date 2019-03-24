@@ -9,6 +9,7 @@
     "flags": 2,
     "help": {"file" : ["./README.textile"]},
     "code": {"file" : [
-        "./src/Rah/Maintenance.php"
+        "./src/Rah/Maintenance.php",
+        "./src/Index.php"
     ]}
 }
