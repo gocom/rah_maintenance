@@ -1,6 +1,6 @@
 {
     "name": "rah/rah_maintenance",
-    "description": "Maintenance mode plugin for Textpattern",
+    "description": "Maintenance mode for Textpattern CMS",
     "keywords": ["textpattern", "plugin"],
     "homepage": "https://github.com/gocom/rah_maintenance",
     "license": "GPL-2.0",
