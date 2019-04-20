@@ -12,7 +12,7 @@ bc. $ composer require rah/rah_maintenance
 
 h2. Changelog
 
-h3. Version 0.2.0 - upcoming
+h3. Version 0.2.0 - 2019/04/21
 
 * Drop backwards compatibility with legacy Textpattern versions.
 * Now requires Textpattern 4.6.0 or newer.
