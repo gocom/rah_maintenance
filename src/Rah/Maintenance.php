@@ -43,9 +43,7 @@ final class Rah_Maintenance
      */
     public function install()
     {
-        if (get_pref('rah_maintenance_active', false) === false) {
-            set_pref('rah_maintenance_active', 0, 'site', PREF_PLUGIN, 'yesnoradio', 81);
-        }
+        create_pref('rah_maintenance_active', 0, 'site', PREF_PLUGIN, 'yesnoradio', 81);
     }
 
     /**
@@ -53,7 +51,7 @@ final class Rah_Maintenance
      */
     public function uninstall()
     {
-        safe_delete('txp_prefs', "name like 'rah\_maintenance\_%'");
+        remove_pref('rah_maintenance_active');
     }
 
     /**
