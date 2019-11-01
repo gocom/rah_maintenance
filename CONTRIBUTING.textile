@@ -31,6 +31,10 @@ The project follows the "PSR-0":https://github.com/php-fig/fig-standards/blob/ma
 
 bc. $ composer cs
 
+h2. Compiling from source
+
+bc. $ composer compile
+
 h2. Versioning
 
 "Semantic Versioning":https://semver.org/ and major.minor.path format.

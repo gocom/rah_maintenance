@@ -41,7 +41,7 @@ final class Rah_Maintenance
     /**
      * Installer.
      */
-    public function install()
+    public function install(): void
     {
         create_pref('rah_maintenance_active', 0, 'site', PREF_PLUGIN, 'yesnoradio', 81);
     }
@@ -49,7 +49,7 @@ final class Rah_Maintenance
     /**
      * Uninstaller.
      */
-    public function uninstall()
+    public function uninstall(): void
     {
         remove_pref('rah_maintenance_active');
     }
@@ -57,7 +57,7 @@ final class Rah_Maintenance
     /**
      * Invokes error page when maintenance mode is active.
      */
-    public function errorPage()
+    public function errorPage(): void
     {
         if (get_pref('rah_maintenance_active') && !is_logged_in()) {
             txp_die(gTxt('rah_maintenance_in_progress'), 503);
