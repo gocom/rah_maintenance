@@ -14,7 +14,9 @@ Or "download":https://github.com/gocom/rah_maintenance/releases an installer pac
 
 h2. Usage
 
-To enable maintenance mode, in the admin at *Preferences*  / *Site*, set *Maintenance mode active?* option to *Yes*.
+To enable maintenance mode, in the admin at *Preferences*  / *Site*, set *Maintenance mode active?* option to *Yes*. Unauthenticated visitors will now see an 503 error page.
+
+To change what is displayed on the error page, create or update your `error_503` page template.
 
 h2. Changelog
 
